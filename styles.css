@@ -1,13 +1,21 @@
 body{
   margin-left:50px;
   background-color:black;
+  overflow-x: hidden;
+}
+.page{
+  display:flex;
 }
 
 .home{
   margin-top: 150px;
+  margin-bottom: 50px;
 }
 .sidenav{
   position: fixed;
+  height:100%;
+  width:250px;
+  overflow-y: auto;
 }
 
 .sidenav a{
@@ -19,6 +27,10 @@ body{
   font-size: 20px;
 }
 
+.sidenav a:hover{
+  color: red;
+}
+
 .name img{
   height:300px;
   border-radius: 100%;
@@ -26,7 +38,7 @@ body{
   margin-top: 60px;
 }
 
-.name .container  {
+/*.name .container  {
   position: relative;
   width: 51%;
 }
@@ -62,7 +74,7 @@ body{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
+}*/
 
 .home .name{
   float:left;
@@ -71,11 +83,123 @@ body{
 .name .hello{
   font-size: 30px;
   color:grey;
+  margin-bottom: 50px;
 }
 .name .me{
   margin-top:100px;
-  margin-left:100px;
+  margin-left:50px;
   line-height: 0ch;
   color:white
 }
 
+.edu {
+  color:white;
+  margin-left:250px;
+  margin-right: 0;
+  line-height: 0ch;
+  position: absolute;
+}
+
+#edu{
+  margin-left: 250px;
+}
+
+.title{
+  font-size:50px;
+  color:white;
+}
+
+.desc{
+  
+  font-size: 20px;
+  color:grey;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+ 
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 200px 0 ;
+  /*transition: all 1s;*/
+}
+ 
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 250px;
+  height: 3px;
+  background: #fff;
+}
+ 
+.timeline ol li:last-child {
+  width: 280px;
+}
+ 
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+ 
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  line-height: 10px;
+  padding: 15px;
+  font-size: 18px;
+  white-space: normal;
+  color: black;
+  background: white;
+  border-radius: 2%;
+}
+ 
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+ 
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+ 
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
