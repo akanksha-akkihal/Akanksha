@@ -10,12 +10,14 @@ body{
 .home{
   margin-top: 150px;
   margin-bottom: 50px;
+  
 }
 .sidenav{
   position: fixed;
   height:100%;
   width:250px;
-  overflow-y: auto;
+  margin-top:250px;
+  z-index: 1;
 }
 
 .sidenav a{
@@ -140,7 +142,7 @@ body{
 }
  
 .timeline ol li:last-child {
-  width: 280px;
+  width: 250px;
 }
  
 .timeline ol li:not(:first-child) {
@@ -162,44 +164,28 @@ body{
 
 .timeline ol li div {
   position: absolute;
-  left: calc(100% + 7px);
+  left: calc(100% - 55px);
   width: 280px;
   line-height: 10px;
-  padding: 15px;
+  padding: 5px;
   font-size: 18px;
   white-space: normal;
-  color: black;
-  background: white;
+  color:white;
+  background:black;
   border-radius: 2%;
-}
- 
-.timeline ol li div::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
 }
 
 .timeline ol li:nth-child(odd) div {
   top: -16px;
   transform: translateY(-100%);
 }
- 
-.timeline ol li:nth-child(odd) div::before {
-  top: 100%;
-  border-width: 8px 8px 0 0;
-  border-color: white transparent transparent transparent;
-}
 
 .timeline ol li:nth-child(even) div {
   top: calc(100% + 16px);
 }
  
-.timeline ol li:nth-child(even) div::before {
-  top: -8px;
-  border-width: 8px 0 0 8px;
-  border-color: transparent transparent transparent white;
+.skills{
+  color:white;
+  margin-left:250px;
+  font-size:50px;
 }
