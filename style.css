@@ -32,7 +32,7 @@ body{
   min-height: 100vh;
   display:block;
   padding : 0 30px;
-}
+} 
 .main-content{
   padding-left: 270px;
 }
@@ -225,7 +225,7 @@ body{
   transform: scale(1.1);
 }
 
-.edu h2{
+.skills h2,.edu h2,.projects h2{
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -292,3 +292,31 @@ body{
   columns: #504e70;
  
 }
+.skill-part{
+  text-align: center;
+}
+.skill{
+  text-align: center;
+  margin:20px 30px;
+  display: inline-block;
+}
+.skill-box {
+  display:inline-block;
+  background-color:#fdf9ff;
+  border:1px solid #d4d4e3;
+  border-radius:10px;
+  position:relative;
+  justify-content:center ;
+  margin-bottom:50px;
+  
+}
+.skills .icon{
+  font-size: 100px;
+ /* background-color: red;*/
+ color:#302e4d
+}
+
+.skill-title{
+  font-size:18px;
+}
+
