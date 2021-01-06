@@ -13,9 +13,11 @@
   color:#ec1839;
 }
 
+.edu .timeline .circle-dot,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
-.home .intro .social-links a{
+.home .intro .social-links a,
+.edu .timeline .timeline-items::before{
   background-color:#ec1839;
 }
