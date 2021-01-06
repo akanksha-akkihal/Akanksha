@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="pattern.css" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
+  <link rel="stylesheet" href="responsive.css" type="text/css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
+  
   <title>Akanksha Akkihal</title>
 </head>
 <body>
@@ -25,11 +27,11 @@
         </span>
       </div>
       <ul class="nav">
-        <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#"><i class="fa fa-graduation-cap"></i> Education</a></li>
-        <li><a href="#"><i class="fa fa-cogs"></i> Skills</a></li>
-        <li><a href="#"><i class="fa fa-eye"></i> Projects</a></li>
-        <li><a href="#"><i class="fa fa-comments"></i> Let's talk</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="#edu"><i class="fa fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#skills"><i class="fa fa-cogs"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fa fa-eye"></i> Projects</a></li>
+        <li><a href="#contacts"><i class="fa fa-comments"></i> Let's talk</a></li>
       </ul>
 
       <div class="copyright">
@@ -37,10 +39,10 @@
       </div>
     </div>
     <!--Aside end-->
-
+    
     <!--MAin content-->
     <div class="main-content">
-      <section class="home section">
+      <section class="home section" id="about">
         <div class="container">
           <div class="intro">
             <img src="Akanksha.jpeg" alt="profile" class="shadow-dark">
@@ -56,8 +58,8 @@
           </div>
         </div>
       </section>
-
-      <section class="edu section">
+    
+      <section class="edu section" id="edu">
         <div class="edu">
           <h2>Education</h2>
           <div class="timeline-box">
@@ -95,7 +97,7 @@
         </div>
       </section>
 
-      <section class="skills section">
+      <section class="skills section" id="skills">
         <div class="skills">
           <h2>Skills</h2>
           <div class="skill-part">
@@ -159,15 +161,108 @@
       
       </section>
 
-      <section class="projects section">
+      <section class="projects section" id="projects">
         <div class="projects">
           <h2>Projects</h2>
-          
+          <div class="projects-row">
+
+            <div class="project">
+              <a href="https://github.com/akanksha-akkihal/MERN-chat-app" target="_blank">
+                <div class="container">
+                  <img src="images\chat.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text"> Front-end using ReactJS – Styled Components.
+                      Backend using NodeJS, ExpressJS and MongoDB.
+                      Socket.io and peerJS used for video chat.</div>
+                  </div>
+                  <figcaption>MERN Chat Application</figcaption>
+                </div> 
+              </a>
+            </div>
+
+            <div class="project">
+              <a href="https://github.com/akanksha-akkihal/my_BlogSite" target="_blank">
+                <div class="container">
+                  <img src="images\blog.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Front-end using HTML CSS and JavaScript.
+                      Backend using NodeJS, ExpressJS and MongoDB.</div>
+                  </div>
+                  <figcaption>Blog Website</figcaption>
+                </div> 
+              </a>
+            </div>
+
+            <div class="project">
+              <a href="https://github.com/akanksha-akkihal/Recommendation-Engine" target="_blank">
+                <div class="container">
+                  <img src="images\reco.jpeg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">A book recommendation engine using supervised
+                      learning algorithm.</div>
+                  </div>
+                  <figcaption>Recommendation Engine</figcaption>
+                </div> 
+              </a>
+            </div>
+
+          </div>
+
+          <div class="projects-row">
+
+            <div class="project">
+              <a href="https://github.com/akanksha-akkihal/Airport-Simulation" target="_blank">
+                <div class="container">
+                  <img src="images\airport.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Modeling of Takeoffs, landing and queue in airports
+                      using Linked lists and Queues in C.
+                      </div>
+                  </div>
+                  <figcaption>Airport Simulation</figcaption>
+                </div> 
+              </a>
+            </div>
+
+            <div class="project">
+              <a href="https://github.com/akanksha-akkihal/Python-Game-bot" target="_blank">
+                <div class="container">
+                  <img src="images\gamebot.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">A Game Bot that can play a web game. Python Imaging
+                      Library, NumPy and PyWin were used.</div>
+                  </div>
+                  <figcaption>Python Game Bot</figcaption>
+                </div> 
+              </a>
+            </div>
+
+          </div>
+
+
         </div>
+      </section>
+      <section class="contacts " id="contacts">
+        <div class="contacts">
+          <h2>Let's Connect...</h2>
+          <p class="email"><i class="fa fa-envelope-o"></i> akankshaakkihal27@gmail.com</p>
+          <div class="social-links">
+            <a href="https://github.com/akanksha-akkihal"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/akanksha_akkihal/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/akanksha.akkihal"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/akanksha-akkihal-ba923719b/"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="copyright">
+            &copy;Akanksha Akkihal 2021
+          </div>
+        </div>
+        
       </section>
     </div>
   </div>
   </div>
+  <script src="script.js"></script>
   <!--Main container end-->
+  
 </body>
 </html>

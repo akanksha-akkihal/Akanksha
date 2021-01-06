@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
 
 /*General styles*/
+.home{
+  background-color: #232323;
+}
+
 body{
   margin:0;
   line-height: 1.5;
@@ -32,6 +36,7 @@ body{
   min-height: 100vh;
   display:block;
   padding : 0 30px;
+  
 } 
 .main-content{
   padding-left: 270px;
@@ -225,7 +230,7 @@ body{
   transform: scale(1.1);
 }
 
-.skills h2,.edu h2,.projects h2{
+.skills h2,.edu h2,.projects h2,.contacts h2{
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -320,3 +325,78 @@ body{
   font-size:18px;
 }
 
+.project .container {
+  position: relative;
+  width: 50%;
+  margin:30px;
+}
+
+.project .image {
+  display: block;
+  width: 300px;
+  height:200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.project .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1a1b1b;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.project .container:hover .overlay {
+  opacity: 0.85;
+}
+
+.project .text {
+  color: white;
+  font-size: 16px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects-row{
+  display:flex;
+  justify-content: center;
+}
+
+.project figcaption{
+  position: relative;
+  text-decoration: none;
+  background-color:white;
+  width:300px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  font-size:20px;
+  font-weight:500;
+  padding:10px;
+}
+
+.contacts{
+  height: 300px;
+  text-align:center;
+  line-height: 2;
+}
+.contacts .email{
+  font-size:25px;
+}
+.contacts .social-links .fa{
+  font-size:40px;
+  margin:20px;
+}
