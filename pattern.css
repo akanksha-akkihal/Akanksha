@@ -1,16 +1,16 @@
 .aside .logo a::before{
-  border-top:4px solid #ec1839;
-  border-left:4px solid #ec1839;
+  border-top:4px solid /*#ec1839*/#14ffec;
+  border-left:4px solid /*#ec1839*/#14ffec;
 }
 
 .aside .logo a::after{
-  border-right:4px solid #ec1839;
-  border-bottom:4px solid #ec1839;
+  border-right:4px solid /*#ec1839*/#14ffec;
+  border-bottom:4px solid /*#ec1839*/#14ffec;
 }
 
 .aside .nav li a:hover,
 .aside .nav li a.active{
-  color:#ec1839;
+  color:/*#ec1839*/#14ffec;
 }
 
 .edu .timeline .circle-dot,
@@ -19,5 +19,5 @@
 .aside .nav-toggler span::after,
 .home .intro .social-links a,
 .edu .timeline .timeline-items::before{
-  background-color:#ec1839;
+  background-color:/*#ec1839*/#14ffec;
 }

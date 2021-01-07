@@ -2,10 +2,31 @@
   .aside{
     left:-270px;
   }
+  .aside .nav-toggler{
+    display:-ms-flexbox;
+    display:flex;
+    left:10px;
+    top:10px;
+  }
+  .aside .nav-toggler.open{
+    left:280px; 
+  }
+  .aside.open{
+    left:0px;
+    
+  }
   .main-content{
     padding-left:0;
   }
-
+  .section{
+    left:0;
+  }
+  .section.open{
+    left:270px;
+  }
+  .skills h2,.edu h2,.projects h2,.contacts h2{
+    padding-top:50px;
+  }
 }
 
 @media (max-width: 991px){
@@ -20,9 +41,10 @@
   .project figcaption{
     width:250px;
   }
+  
 }
 
-@media (max-width: 767px){
+@media (max-width: 830px){
   .project .image{
     height:150px;
     width:200px;
@@ -33,6 +55,21 @@
   }
   .project figcaption{
     width:200px;
+  }
+}
+@media (max-width: 700px){
+  .project .image{
+    height:130px;
+    width:170px;
+
+  }
+  .project .overlay{
+    height:130px;
+    width:170px;
+  }
+  .project figcaption{
+    width:170px;
+    font-size:16px;
   }
 }
 
