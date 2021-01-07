@@ -92,3 +92,23 @@
     font-size:70px;
   }
 }
+
+@media (max-width: 414px){
+  .project .image{
+    height:170px;
+    width:250px;
+  }
+  .project .overlay{
+    height:170px;
+    width:250px;
+  }
+  .project figcaption{
+    width:250px;
+  }
+  .contacts{
+    height: 400px;
+  }
+  .contacts .email{
+    font-size:20px;
+  }
+}
